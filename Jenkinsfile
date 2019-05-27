@@ -5,7 +5,7 @@ pipeline {
 
             steps {
 
-                       git "https://github.com/saurabhsonje/nexusdata.git"
+                       git "https://github.com/saurabhsonje/alldone.git"
                 //
 
             }
@@ -28,7 +28,7 @@ pipeline {
 
             steps {
 
-                  sh "/nexus"
+                  sh "/nexus/sonar-scanner-3.3.0.1492-linux/bin/sonar-scanner"
 
 
             }
